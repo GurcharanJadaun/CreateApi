@@ -5,7 +5,7 @@ buzzFizzApp.listen(
 
     port,()=> console.log('the App is running on port http://localhost:' + port)
 )
-
+//create Api
 buzzFizzApp.get('/aisera/buzzFizz/:inp', (req, res) => {
     const {inp} = req.params;
     let output = buzzFizz(inp);
